@@ -13,7 +13,7 @@ title: 聊一聊人工智能
 ## 计算机科学之父
 
 <div align="center">
-<img  src="images/turing.jpg" width = "150" height = "200" title="图灵" alt="图灵" />
+<img  src="images/Turing.jpg" width = "150" height = "200" title="图灵" alt="图灵" />
 
 [Alan Turing](https://zh.wikipedia.org/wiki/%E8%89%BE%E4%BC%A6%C2%B7%E5%9B%BE%E7%81%B5)
 </div>
