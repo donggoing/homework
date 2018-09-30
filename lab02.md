@@ -3,7 +3,7 @@
 考虑了半天要做什么小游戏，就想写点童年回忆的小游戏，先倒腾了黄金矿工，素材准备好、开始界面弄好、背景弄好、人物弄好，结果卡在运动动作上，还不如直接用h5...罢了...<br/>
 最后决定做大鱼吃小鱼这个（当时:joy:）人尽皆知、老少皆宜的小游戏。
 
-## 半成品
+## (半)成品
 
 首先，十分感谢Construct2软件的开发者，再有~感谢[三元素网](3png.com)和[巧办网](qiao88.com)较开放的素材资源，解决了我找不到鱼的困境，还要感谢[http://www.shiwusui.com/](http://www.shiwusui.com/)的艺术字转换为开始页面提供了好看的标题。最终得到的游戏界面如下：
 
@@ -37,6 +37,8 @@
 
 ![](images/s2.png)
 
+<hr>
+
 为了方便，接下来用这样的方式说明步骤：
 Project面板->选中Layout1->Rename->BackGround<br/>
 Project面板->选中Layout1->Lock<br/>
@@ -49,11 +51,14 @@ Project->Add layer at top->Rename->PlayGround
 Project->Add layer at top->Rename->Restart
 创建Restart界面（赢或输）(属性页面设置初始invisible)
 
+<hr>
 
 选择Begin面板->双击Layout1区域->Sprite->点击放置贴图的区域->Title图片
 选择插入的Title->属性栏设置合适的size
 同理插入开始游戏按钮（软件自带默认button太丑）
 现在已经完成了开始界面，效果同上展示部分。
+
+<hr>
 
 双击Layout1区域->Mouse
 进入EventSheet界面->Add Event:
@@ -73,6 +78,8 @@ Layout->Begin和Playground前的勾去掉
 
 ![](images/s4.png)
 
+<hr>
+
 进入EventSheet界面->Add Event:
 Condition:
 Mouse->On Project Clicked->Object Clicked->Restart按钮
@@ -86,23 +93,26 @@ Mouse->Set Cursor Style->None
 
 Layout->Restart前的勾去掉
 使Restart层在编辑区域不可见，进入的Playground层的编辑
+<hr>
 
 ### 游戏区域布置
 
 选中Playground层->双击Layout1区域->Sprite->点击放置贴图的区域（我将其放在界面下方）->选择🐠的图片->Crop transparents edges
 选择插入的🐠->属性栏设置合适的size
-插入🐠并将透明区域边界去掉<br/>
-用上述方式插入若干条不同的鱼（向右运动的鱼，若初始不是向右的🐠，在图像编辑区将其翻转）
 
-创建反向运动的🐠（向左的鱼），逐条点击插入的鱼，右键->Clone Object Type->点击合适的放置区域->修改🐠的大小与原来的🐠一致->双击🐠进入图像编辑区->flip上下颠倒（因为反向运动需要设置180°的运动方向，最终是正常显示的，所以不用在意）
+插入🐠并将透明区域边界去掉<br/>用上述方式插入若干条不同的鱼（向右运动的鱼，若初始不是向右的🐠，在图像编辑区将其翻转）
+
+创建反向运动的🐠（向左的鱼）——逐条点击插入的鱼，右键->Clone Object Type->点击合适的放置区域->修改🐠的大小与原来的🐠一致->双击🐠进入图像编辑区->flip上下颠倒（因为反向运动需要设置180°的运动方向，最终是正常显示的，所以不用在意）
 
 在各条鱼的左侧属性栏上添加Behaviors
 Behaviors->Add new->Bullet->Speed->250（每条鱼可设置不一样的速度）
-使除了主角🐠外的其它🐠全部自行游动
 
-同样的方法插入主角🐠，但只需插入并将其置于背景图上,另外在Behaviors里加上BoundToLayout。
+<hr>
 
-在左上角添加一个Text文本框(文字通过每帧动态更新），右上角也添加一个Text文本框(内容固定为Expected:),在右上角文本框右侧重叠放置Clone Object Type创建的无Bullet行为的非主角鱼（用于显示当前主角🐠可以吃的最大的鱼的类型）。
+使除了主角🐠外的其它🐠全部自行游动<br/>
+同样的方法插入主角🐠，但只需插入并将其置于背景图上,另外在Behaviors里加上BoundToLayout,防止其超出边界。
+
+在左上角添加一个Text文本框(文字通过每帧动态更新），右上角也添加一个Text文本框(内容设置为"Expected:"),在右上角文本框右侧重叠放置Clone Object Type创建的无Bullet行为的非主角鱼（用于显示当前主角🐠可以吃的最大的鱼的类型）。
 
 当前制作效果应当如下所示：
 
@@ -216,7 +226,7 @@ Fish->Destory
 
 销毁超出区域的🐠
 
-
+<hr>
 ##总结
 
-自此，整个小游戏就制作完成了，虽然仍存在不少缺点，部分可能是软件自身的问题，当然大部分是我个人的原因，但这只是一次尝试，以后的游戏还是得用代码完善甚至全部使用代码的:joy:,所以我会继续努力的！
+自此，整个小游戏就制作完成了，虽然仍存在不少缺点，但这只是一次尝试，以后的写游戏也会完全无代码编写，还是得用代码完善甚至全部使用代码的:joy:,所以我会继续努力的！
