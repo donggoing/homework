@@ -2,7 +2,7 @@
 
 ## 写在前面
 
-鉴于之前写的大鱼吃小鱼的游戏的确没有什么亮点，因此这次改做另一个小游戏——[保卫西瓜](https://donggoing.github.io/swi-homework/ProtectWM)，希望大家喜欢。
+鉴于之前写的大鱼吃小鱼的游戏的确没有什么亮点，因此这次改做另一个小游戏——[保卫西瓜](https://donggoing.github.io/swi-homework/ProtectWM/index.html)，希望大家喜欢。
 
 ## 游戏策划
 
@@ -95,3 +95,5 @@
 
 
 试玩地址上面已给出，希望大家喜欢！
+
+如果用的是Chrome，可能因为其安全模式的原因无法正常地玩耍，请按Win+R然后输入chrome --allow-file-access-from-files即可。
