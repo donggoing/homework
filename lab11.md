@@ -17,7 +17,7 @@ Tor全球节点
 简单地说，所有你在明网上做不到或者难以做到的、受到政府机构管制的交易、行当，在暗网上只要你有钱（比特币）就可以轻易做到。包括但不限于明码标价的黑客服务、杀手服务、假货、毒品、枪支、护照、假钞甚至人体器官乃至妇女儿童...种种种种足以让一个普通人在短时间内对这个网络产生恐惧并且不会再想再进去看第二次。
 <div style="text-align:center">
 <img src="images/dark.png"/>
-TORCH: Tor Search Engine首页广告
+TORCH: Tor Search Engine首页广告(导航)
 
 <img src="images/sellmeth.png"/>
 
