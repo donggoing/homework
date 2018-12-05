@@ -61,47 +61,46 @@ int main() {
 		char st = getch();
 		while (st != 'S' && st != 's')
 			st=getch();
-		if (st == 'S' || st == 's') {
-			//初始化参数
-			init();
-			//清空界面
-			system("cls");
-			//输出界面
-			output();
-			while (alive) {	
-				//若键盘有输入，根据输入值进行移动并更新蛇的状态和地图
-				if (kbhit()) {
-					char dir = getch();
-					switch (dir) {
-					  case 'w':
-					  case 'W':
-						snakeMove(-1, 0);
-						break;
-					  case 's':
-					  case 'S':
-						snakeMove(1, 0);
-						break;
-					  case 'a':
-					  case 'A':
-						snakeMove(0, -1);
-						break;
-					  case 'd':
-					  case 'D':
-						snakeMove(0, 1);
-						break;
-					  default:
-						snakeMove(curv, curh);
-					}
+		//初始化参数
+		init();
+		//清空界面
+		system("cls");
+		//输出界面
+		output();
+		while (alive) {	
+			//若键盘有输入，根据输入值进行移动并更新蛇的状态和地图
+			if (kbhit()) {
+				char dir = getch();
+				switch (dir) {
+					case 'w':
+					case 'W':
+					snakeMove(-1, 0);
+					break;
+					case 's':
+					case 'S':
+					snakeMove(1, 0);
+					break;
+					case 'a':
+					case 'A':
+					snakeMove(0, -1);
+					break;
+					case 'd':
+					case 'D':
+					snakeMove(0, 1);
+					break;
+					default:
+					snakeMove(curv, curh);
 				}
-				//否则蛇按当前方向移动
-				else snakeMove(curv, curh);
-				//输出界面
-				system("cls");
-				output();
-				//延迟
-				delay(150);
 			}
+			//否则蛇按当前方向移动
+			else snakeMove(curv, curh);
+			//输出界面
+			system("cls");
+			output();
+			//延迟
+			delay(150);
 		}
+	
 	}
 }
 

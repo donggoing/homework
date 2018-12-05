@@ -61,8 +61,10 @@ int main() {
 		char st = getchar();
 		while (st != 'S' && st != 's')
 			st = getchar();
-			output();
+		//输出界面
+		output();
 		while (alive) {
+			//获取蛇的下一运动方向
 			char dir = getchar();
 			while (dir == '\n')dir = getchar();
 			switch (dir) {
@@ -83,11 +85,13 @@ int main() {
 				snakeMove(0, 1);
 				break;	
 			}
+			//输出界面
 			output();
 		}
 	}
 }
 
+//snake移动，v：垂直方向，h：水平方向
 void snakeMove(int v, int h) {
 	if (v == -1) {
 		curv = v;
@@ -110,21 +114,28 @@ void snakeMove(int v, int h) {
 		printf("Sneak goes right.\n");
 	}
 }
+
+//随机在合适的区域放置食物
 void put_money(void) {
 	printf("Put Money.\n");
 }
+
+//输出界面
 void output(void) {
 	printf("Print the map.\n");
 }
 
+//结束游戏
 void gameover(void) {
 	printf("Game Over!\n");
 }
 
+//延迟
 void  delay(int time) {
 	printf("Delay time s.\n");
 }
 
+//初始化游戏各参数、蛇和地图
 void init() {
 	printf("Initialize Game.\n");
 }
