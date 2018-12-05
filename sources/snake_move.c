@@ -64,6 +64,7 @@ int main() {
 			output();
 		while (alive) {
 			char dir = getchar();
+			while (dir == '\n')dir = getchar();
 			switch (dir) {
 			  case 'w':
 			  case 'W':
@@ -82,7 +83,6 @@ int main() {
 				snakeMove(0, 1);
 				break;	
 			}
-			snakeMove(curv, curh);
 			output();
 		}
 	}

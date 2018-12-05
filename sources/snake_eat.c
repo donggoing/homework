@@ -96,6 +96,7 @@ int main() {
 				//否则蛇按当前方向移动
 				else snakeMove(curv, curh);
 				//输出界面
+				system("cls");
 				output();
 				//延迟
 				delay(150);
