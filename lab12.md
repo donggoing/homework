@@ -50,6 +50,6 @@
 ## 附件
 游戏源文件如下：
 任务一：
-[snake_move.c](sources/snake_eat.c)
+[snake_move.c](sources/snake_move.c)
 任务二：
 [snake_eat.c](sources/snake_eat.c)

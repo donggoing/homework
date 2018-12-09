@@ -25,7 +25,7 @@ void output(void);
 void gameover(void);
 //初始化参数、蛇和地图状态
 void init(void);
-//延迟,使用time.h文件以兼容不同平台或编译器
+//延迟
 void delay(int);
 
 char map[12][12] =
