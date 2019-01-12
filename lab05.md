@@ -95,9 +95,9 @@
 
 ### 一位的全加电路图
 
-![](images/1bitadd.png)
+![](images/1bitfulladd.png)
 
 
 ### 两位的全加电路图
 
-![](images/2bitadd.png)
+![](images/2bitfulladd.png)
